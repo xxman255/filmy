@@ -1,0 +1,16 @@
+{ 
+    "definition":
+    { 
+        "openapi":"3.0.0", 
+        "info":
+        { 
+            "title":"Movies API", 
+            "version":"0.1.0", 
+            "description":"This is a documentation for the Movies API", 
+            "license":
+            { 
+                "name":"MIT", "url":"https://spdx.org/licenses/MIT.html" 
+            } 
+        }   
+    }     
+}

@@ -1,0 +1,79 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "standard"
+    ],
+    "plugins": [
+      "jest"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "max-len": [
+          "error",
+          {
+            "code": 150,
+            "ignoreUrls": true
+          }
+        ],
+
+        "no-var": "error",
+
+        "comma-spacing": [
+          "error",
+          {
+            "before": false,
+            "after": true
+          }
+        ],
+
+        "valid-typeof":"off",
+
+        "indent": [
+          "error",
+          2,
+          {
+            "SwitchCase": 1
+          }
+        ],
+
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+
+        "no-cond-assign": ["error", "always"],
+
+        "no-console": ["error"],
+
+        "no-multi-spaces": [
+          "error",
+          {
+            "exceptions": {
+              "VariableDeclarator": true
+            }
+          }
+        ],
+
+        "node/no-deprecated-api": [
+          "error",
+          {
+            "ignoreModuleItems": [],
+            "ignoreGlobalItems": ["new Buffer()"]
+          }
+        ],
+
+        "node/no-unpublished-require": ["off", {}],
+
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error"
+    }
+}
